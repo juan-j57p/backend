@@ -1,7 +1,9 @@
 const espress = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const app = espress();
 
+app.use(cors());
 app.use(espress.json());
 app.use(espress.urlencoded({ extended: true }));
 app.use((req, res, next) => {
