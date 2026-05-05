@@ -8,8 +8,11 @@ const Phone = require('./models/Phone');
 
 const app = espress();
 
+<<<<<<< HEAD
 
 app.use(espress.static('build'));
+=======
+>>>>>>> parent of 8dad42d (all changes)
 app.use(cors());
 app.use(espress.json());
 app.use(espress.urlencoded({ extended: true }));
